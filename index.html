@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yfy2iay.css">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+        }
+        header {
+            background-color: white;
+            font-size: 30px;
+            margin-top: -10px;
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            padding: 20px 10px 10px 10px;
+        }
+        .white-background-top {
+            height: 20%;
+            width: 100vw;
+            background-color: white;
+        }
+        .wave-container {
+            position: relative;
+        }
+        .heading-container {
+            /* background-color: aqua; */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+        div#heading-text {
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1;
+            position: absolute;
+            left: 75%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+        div#second-heading {
+            color: white;
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1;
+            position: absolute;
+            left: 2%;
+            margin-top: 160%;
+            margin-left: 7%;
+        }
+        @media screen and (min-width: 1601px) {
+            div#heading-text {
+                top: 30%;
+                font-size: 350px;
+            }
+            div#second-heading {
+                font-size: 350px;
+            }
+        }
+        /* If screen size is more than 600px wide, set the font-size of <div> to 300px */
+        @media screen and (min-width: 601px) and (max-width: 1600px){
+            div#heading-text {
+                top: 10%;
+                font-size: 150px;
+            }
+            div#second-heading {
+                font-size: 150px;
+            }
+        }
+        /* If screen size is 600px wide, or less, set the font-size of <div> to 10px */
+        @media screen and (max-width: 600px) {
+            div#heading-text {
+                top: 5%;
+                font-size: 100px;
+            }
+            div#second-heading {
+                font-size: 100px;
+            }
+        }
+ 
+
+
+        /* .white-background {
+            position: relative;
+            z-index: 2;
+            height: 30%;
+            width: 102%;
+            background-color: white;
+        } */
+
+        #large-wave-topmost {
+            position: absolute;
+            width: 102%;
+            height: auto;
+            background-color: white; 
+            /* Animation */
+            animation: MoveUpDown 5s linear infinite;
+        }
+        #large-wave-second-topmost {
+            position: absolute;
+            width: 102%;
+            height: auto;  
+            margin-top: 35%;
+            /* background-color: black; */
+            /* Animation */
+            animation: MoveUpDown 5s linear infinite;
+        }
+        #small-wave-1-back-most-row {
+            /* background-color: red; */
+            position: absolute;
+            height: auto;  
+            width: 30%;
+            margin-top: 50%;
+            margin-left: -10%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-2-second-row-right {
+            /* background-color: coral; */
+            position: absolute;
+            height: auto;  
+            width: 35%;
+            margin-top: 58%;
+            margin-left: 7%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-3-second-row-left {
+            /* background-color: orange; */
+            position: absolute;
+            height: auto;  
+            width: 35%;
+            margin-top: 58%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        #small-wave-4-third-row-right {
+            /* background-color: lightyellow; */
+            position: absolute;
+            height: auto;  
+            width: 46%;
+            margin-top: 67%;
+            margin-left: 20%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-5-third-row-left {
+            /* background-color: yellow; */
+            position: absolute;
+            height: auto;  
+            width: 46%;
+            margin-top: 67%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        #small-wave-6-fourth-row-right {
+            /* background-color: lightgreen; */
+            position: absolute;
+            height: auto;  
+            width: 62%;
+            margin-top: 77%;
+            margin-left: 42%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-7-fourth-row-left {
+            /* background-color: green; */
+            position: absolute;
+            height: auto;  
+            width: 70%;
+            margin-top: 80%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        @keyframes MoveUpDown {
+            0%   {left: 0px; top: 0px;}
+            50%  {top: 30px;}
+            100% {left: 0px; top: 0px;}
+        }
+        #white-whale {
+            position: absolute;
+            height: auto;  
+            width: 140%;
+            -webkit-transform: scaleX(-1) rotate(-45deg);
+            transform: scaleX(-1) rotate(-45deg);
+            margin-top: 75%;
+            margin-left: -15%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Elaine Yu</p>
+    </header>
+    <div class="white-background-top">
+        <div class="heading-container">
+            <div id="heading-text">Make Waves</div>
+        </div>
+        <div class="wave-container">
+            <img id="large-wave-topmost" src="./assets/images/LargeWaveTopMost.png" />
+            <img id="large-wave-second-topmost" src="./assets/images/LargeWaveSecondTopmost.png" />
+            <img id="small-wave-1-back-most-row" src="./assets/images/SmallWave.png" />
+            <img id="small-wave-2-second-row-right" src="./assets/images/SmallWave.png" />
+            <img id="small-wave-3-second-row-left" src="./assets/images/SmallWave.png" />
+            <img id="small-wave-4-third-row-right" src="./assets/images/SmallWave.png" />
+            <img id="small-wave-5-third-row-left" src="./assets/images/SmallWave.png" />
+            <img id="small-wave-6-fourth-row-right" src="./assets/images/SmallWave.png" />
+            <img id="white-whale" src="./assets/images/White_Whale.png" />
+            <img id="small-wave-7-fourth-row-left" src="./assets/images/SmallWave.png" />
+            <div id="second-heading">Web & Graphic Design Services</div>
+        </div>
+    </div>
+</body
+</html>
