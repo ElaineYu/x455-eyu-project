@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display&display=swap');
+
+.page-title {
+    font-family: 'Red Hat Display',  sans-serif;
+    font-size: 150px;;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.field-note-title {
+    font-family: 'Red Hat Display',  sans-serif;
+    font-size: 150px;;
+    font-weight: 700;
+    text-align: center;
+}

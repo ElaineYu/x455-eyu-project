@@ -4,243 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/nav.css" />
     <link rel="stylesheet" href="https://use.typekit.net/yfy2iay.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Mono">
-    <style>
-        body {
-            height: 100vh;
-            width: 100vw;
-            background-color: black;
-            margin: 0;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: white;
-        }
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            color: black;
-            text-align: center;
-      
-            text-decoration: none;
-            font-family: 'Nova Mono';
-        }
-        #home-button {
-            font-size: 30px;
-            padding: 20px 24px;
-        }
-        
-        /* Right-aligned section inside the top navigation */
-        .topnav-right {
-            float: right;
-            > a {
-                font-size: 20px;    
-                padding: 20px 24px;
-            }
-        }
-
-        .white-background-top {
-            height: 20vh;
-            width: 100vw;
-            background-color: white;
-        }
-        .wave-container {
-            position: relative;
-        }
-        .heading-container {
-            /* background-color: aqua; */
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: 1;
-        }
-        div#heading-text {
-            font-family: "gioviale", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            line-height: 0.85;
-            position: absolute;
-            left: 75%;
-            transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-        }
-        div#second-heading {
-            color: white;
-            font-family: "gioviale", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            line-height: 1;
-            position: absolute;
-            left: 2%;
-            margin-top: 160%;
-            margin-left: 7%;
-            /* text-shadow: 1px 1px 2px red, 0 0 1em rgba(45,255,196,0.9), 0 0 0.2em rgba(45,255,196,0.9);  */
-        }
-        @media screen and (min-width: 1601px) {
-            div#heading-text {
-                top: 30%;
-                font-size: 150px;
-            }
-            div#second-heading {
-                font-size: 250px;
-            }
-        }
-        /* If screen size is more than 600px wide, set the font-size of <div> to 300px */
-        @media screen and (min-width: 601px) and (max-width: 1600px){
-            div#heading-text {
-                top: 10%;
-                font-size: 150px;
-            }
-            div#second-heading {
-                font-size: 150px;
-            }
-        }
-        /* If screen size is 600px wide, or less, set the font-size of <div> to 10px */
-        @media screen and (max-width: 600px) {
-            div#heading-text {
-                top: 5%;
-                font-size: 70px;
-            }
-            div#second-heading {
-                font-size: 70px;
-            }
-        }
- 
-
-
-        /* .white-background {
-            position: relative;
-            z-index: 2;
-            height: 30%;
-            width: 102%;
-            background-color: white;
-        } */
-
-        #large-wave-topmost {
-            position: absolute;
-            width: 102%;
-            height: auto;
-            background-color: white; 
-            /* Animation */
-            animation: MoveUpDown 5s linear infinite;
-        }
-        #large-wave-second-topmost {
-            position: absolute;
-            width: 102%;
-            height: auto;  
-            margin-top: 35%;
-            /* background-color: black; */
-            /* Animation */
-            animation: MoveUpDown 5s linear infinite;
-        }
-        #small-wave-1-back-most-row {
-            /* background-color: red; */
-            position: absolute;
-            height: auto;  
-            width: 30%;
-            margin-top: 50%;
-            margin-left: -10%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-2-second-row-right {
-            /* background-color: coral; */
-            position: absolute;
-            height: auto;  
-            width: 35%;
-            margin-top: 58%;
-            margin-left: 7%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-3-second-row-left {
-            /* background-color: orange; */
-            position: absolute;
-            height: auto;  
-            width: 35%;
-            margin-top: 58%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        #small-wave-4-third-row-right {
-            /* background-color: lightyellow; */
-            position: absolute;
-            height: auto;  
-            width: 46%;
-            margin-top: 67%;
-            margin-left: 20%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-5-third-row-left {
-            /* background-color: yellow; */
-            position: absolute;
-            height: auto;  
-            width: 46%;
-            margin-top: 67%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        #small-wave-6-fourth-row-right {
-            /* background-color: lightgreen; */
-            position: absolute;
-            height: auto;  
-            width: 62%;
-            margin-top: 77%;
-            margin-left: 42%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-7-fourth-row-left {
-            /* background-color: green; */
-            position: absolute;
-            height: auto;  
-            width: 70%;
-            margin-top: 80%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        @keyframes MoveUpDown {
-            0%   {left: 0px; top: 0px;}
-            50%  {top: 30px;}
-            100% {left: 0px; top: 0px;}
-        }
-        #white-whale {
-            position: absolute;
-            height: auto;  
-            width: 100%;
-            -webkit-transform: scaleX(-1) rotate(-45deg);
-            transform: scaleX(-1) rotate(-45deg);
-            margin-top: 75%;
-            margin-left: -15%;
-        }
-    </style>
 </head>
-
 <body>
     <header class="topnav">
-        <a id="home-button">ELAINE YU</a>
-        <div class="topnav-right">
-            <a href="#about">ABOUT</a>
-            <a href="#field-notes">FIELD NOTES</a>
-            <a href="#photography">PHOTOGRAPHY</a>
-            <a href="design-resources">DESIGN RESOURCES</a>
-        </div>
+            <div class="topnav-left">
+                <a class="topnav-links" href="/"><div id="home-button">ELAINE YU</div></a>
+            </div>
+            <div class="topnav-right">
+                <a class="topnav-links" href="faq.html"><div>FAQ</div></a>
+                <a class="topnav-links" href="design-resources.html"><div>DESIGN RESOURCES</div></a>
+                <a class="topnav-links" href="photography.html"><div>PHOTOGRAPHY</div></a>
+                <a class="topnav-links" href="field-notes.html"><div>FIELD NOTES</div></a>
+                <a class="topnav-links" href="about.html"><div>ABOUT</div></a>
+
+            </div>
     </header>
-    <div class="white-background-top">
-        <div class="heading-container">
-            <div id="heading-text">Let's Make Waves</div>
-        </div>
-        <div class="wave-container">
-            <img id="large-wave-topmost" src="./assets/images/LargeWaveTopMost.png" />
-            <img id="large-wave-second-topmost" src="./assets/images/LargeWaveSecondTopmost.png" />
-            <img id="small-wave-1-back-most-row" src="./assets/images/SmallWave.png" />
-            <img id="small-wave-2-second-row-right" src="./assets/images/SmallWave.png" />
-            <img id="small-wave-3-second-row-left" src="./assets/images/SmallWave.png" />
-            <img id="small-wave-4-third-row-right" src="./assets/images/SmallWave.png" />
-            <img id="small-wave-5-third-row-left" src="./assets/images/SmallWave.png" />
-            <img id="small-wave-6-fourth-row-right" src="./assets/images/SmallWave.png" />
-            <img id="white-whale" src="./assets/images/White-Whale.png" />
-            <img id="small-wave-7-fourth-row-left" src="./assets/images/SmallWave.png" />
-            <div id="second-heading">Web & Graphic Design Services</div>
-        </div>
+    <div class="heading-container">
+        <div id="main-top-heading">Make Waves</div>
+        <!-- <div id="subheading-text"> graphic design <br>& web development</div> -->
     </div>
+            <div class="wave-container">
+                <div class="white-background-top"></div>
+                <img id="large-wave-topmost" src="./assets/images/index/LargeWaveTopMost.png" />
+                <img id="large-wave-second-topmost" src="./assets/images/index/LargeWaveSecondTopmost.png" />
+                <img id="small-wave-1-back-most-row" src="./assets/images/index/SmallWave.png" />
+                <img id="small-wave-2-second-row-right" src="./assets/images/index/SmallWave.png" />
+                <img id="small-wave-3-second-row-left" src="./assets/images/index/SmallWave.png" />
+                <img id="small-wave-4-third-row-right" src="./assets/images/index/SmallWave.png" />
+                <img id="small-wave-5-third-row-left" src="./assets/images/index/SmallWave.png" />
+                <img id="small-wave-6-fourth-row-right" src="./assets/images/index/SmallWave.png" />
+                <img id="white-whale" src="./assets/images/index/White-Whale.png" />
+                <img id="small-wave-7-fourth-row-left" src="./assets/images/index/SmallWave.png" />
+                 <div id="second-heading">Creative <br>Graphic & Web <br>Design Services</div>
+            </div>
+    <div style="display: block;"><h1>Another Div</h1></div>
+    <footer>
+        <div style="width: 100%; display: block; background-color:aqua; height: 100px; width: auto;">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-behance"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </footer>
 </body
 </html>

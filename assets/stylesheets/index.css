@@ -1,0 +1,210 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    margin: 0;
+}
+
+        .heading-container {
+            background-color: white;
+            overflow: hidden;
+        }
+
+
+ 
+        div#main-top-heading {
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-size: 250px;
+            text-align: center;
+            font-style: normal;
+            line-height: 0.9;
+            /* display: block; */
+            padding: 60px 0 5px 0;
+        }
+
+        #subheading-text {
+            color: rgb(175, 40, 107);
+            text-align: left;
+            text-decoration: none;
+            font-size: 50px;
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 0.9;
+        }
+
+        /* div#main-top-heading {
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 0.9;
+            position: absolute;
+            left: 75%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        } */
+        div#second-heading {
+            color: white;
+            font-family: "gioviale", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1;
+            position: absolute;
+            margin-left: 2%;
+            margin-top: 140%;
+            margin-left: 7%;
+            /* animation: neonblue 2s ease-in-out infinite alternate; */
+            /* text-shadow: 1px 1px 2px red, 0 0 1em rgba(45,255,196,0.9), 0 0 0.2em rgba(45,255,196,0.9);  */
+        }
+
+        /* @keyframes neonblue {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+                0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+            }
+            to {
+                text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
+                0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+            }
+         } */
+
+        @media screen and (min-width: 1601px) {
+            div#heading-text {
+                top: 30%;
+                font-size: 150px;
+            }
+            div#second-heading {
+                font-size: 250px;
+            }
+        }
+        /* If screen size is more than 600px wide, set the font-size of <div> to 300px */
+        @media screen and (min-width: 601px) and (max-width: 1600px){
+            div#heading-text {
+                top: 10%;
+                font-size: 150px;
+            }
+            div#second-heading {
+                font-size: 150px;
+            }
+        }
+        /* If screen size is 600px wide, or less, set the font-size of <div> to 10px */
+        @media screen and (max-width: 600px) {
+            div#heading-text {
+                top: 5%;
+                font-size: 70px;
+            }
+            div#second-heading {
+                font-size: 70px;
+            }
+        }
+ 
+
+
+        .wave-container {
+            position: relative;
+            width: 100%;
+            /*  TO-DO: CHANGE Height ACCORDING TO MEDIA BREAKTPOINT */
+            height: 105%;
+            background-color: rgb(8, 5, 5);
+            display: block;
+
+        }
+        .white-background-top {
+            height: 20vh;
+            width: 100vw;
+            background-color: white;
+            position: relative;
+        } 
+
+        #large-wave-topmost {
+            position: absolute;
+            width: 102%;
+            height: auto;
+            background-color: white; 
+            animation: MoveUpDown 5s linear infinite;
+        }
+        #large-wave-second-topmost {
+            position: absolute;
+            width: 102%;
+            height: auto;  
+            margin-top: 35%;
+            /* background-color: gold; */
+            animation: MoveUpDown 5s linear infinite;
+        }
+        #small-wave-1-back-most-row {
+            /* background-color: red; */
+            position: absolute;
+            height: auto;  
+            width: 30%;
+            margin-top: 50%;
+            margin-left: -10%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-2-second-row-right {
+            position: absolute;
+            height: auto;  
+            width: 35%;
+            margin-top: 58%;
+            margin-left: 7%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-3-second-row-left {
+            /* background-color: orange; */
+            position: absolute;
+            height: auto;  
+            width: 35%;
+            margin-top: 58%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        #small-wave-4-third-row-right {
+            /* background-color: lightyellow; */
+            position: absolute;
+            height: auto;  
+            width: 46%;
+            margin-top: 67%;
+            margin-left: 20%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-5-third-row-left {
+            /* background-color: yellow; */
+            position: absolute;
+            height: auto;  
+            width: 46%;
+            margin-top: 67%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        #small-wave-6-fourth-row-right {
+            /* background-color: lightgreen; */
+            position: absolute;
+            height: auto;  
+            width: 62%;
+            margin-top: 77%;
+            margin-left: 42%;
+            animation: MoveUpDown 4s linear infinite;
+        }
+        #small-wave-7-fourth-row-left {
+            /* background-color: green; */
+            position: absolute;
+            height: auto;  
+            width: 70%;
+            margin-top: 80%;
+            margin-left: -25%;
+            animation: MoveUpDown 3s linear infinite;
+        }
+        @keyframes MoveUpDown {
+            0%   {left: 0px; top: 0px;}
+            50%  {top: 30px;}
+            100% {left: 0px; top: 0px;}
+        }
+        #white-whale {
+            position: absolute;
+            height: auto;  
+            width: 105%;
+            -webkit-transform: scaleX(-1) rotate(-45deg);
+            transform: scaleX(-1) rotate(-45deg);
+            margin-top: 55%;
+            margin-left: -15%;
+        }
