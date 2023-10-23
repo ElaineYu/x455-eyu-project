@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display&display=swap');
+
+.sticky-nav {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: 'Red Hat Display',  sans-serif;
+    height: 100%;
+    width: 100%;
+    position: -webkit-sticky;
+	position: sticky;
+    top: 0;
+    background-color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+.sticky-nav a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+.sticky-nav a:hover {
+    font-family: 'Red Hat Display',  sans-serif;
+    font-weight: 700;
+}
+
+.design-resources-section-heading {
+    font-family: 'Red Hat Display',  sans-serif;
+}
+
+.list-subheading {
+    font-family: 'Red Hat Display',  sans-serif;
+    font-weight: 700;
+}
+.list-subheading-padding-top-zero {
+    padding-top: 0px;
+}
+
+ul.columns  {
+    padding-left: 0;
+    > li {
+        margin: 5px 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Red Hat Display',  sans-serif;
+        > a {
+            color: black;
+            text-decoration: none;
+        }   
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sticky-nav a {
+        font-size: 18px;
+        padding: 0% 2.5%;
+
+    }
+    .design-resources-container {
+        margin: 0;
+    }
+    .design-resources-section-heading {
+        font-size: 32px;
+    }
+    .list-subheading {
+        padding-top: 22px;
+        font-size: 22px;
+    }
+    .columns {
+        column-count: 1;
+    }
+    ul.columns  {
+        > li {
+            > a {
+                background-color: aqua;
+                font-size: 16px;
+            }   
+        }
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .sticky-nav a {
+        font-size: 18px;
+        padding: 0% 3.5%;
+    }
+    .design-resources-container {
+        margin: 0 15%;
+    }
+    .list-subheading {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+    .columns {
+        column-count: 1;
+    }
+    .columns a {
+        font-size: 17px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+    .sticky-nav {
+        margin: 2% 0;
+    }
+    .sticky-nav a {
+        font-size: 22px;
+        padding: 0% 4%;
+    }
+    .design-resources-container {
+        margin: 0 15%;
+    }
+    .design-resources-section-heading {
+        font-size: 35px;
+    }
+    .list-subheading {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+    .columns {
+        column-count: 2;
+    }
+    .columns a {
+        font-size: 18px;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .sticky-nav {
+        margin: 2% 0;
+    }
+    .sticky-nav a {
+        font-size: 24px;
+        padding: 0% 5.3%;
+    }
+    .design-resources-container {
+        margin: 0 15%;
+    }
+    .design-resources-section-heading {
+        font-size: 40px;
+    }
+    .list-subheading {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+    .columns {
+        columns: 3;
+    }
+    .columns a {
+        font-size: 20px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .sticky-nav {
+        margin: 2% 0;
+    }
+    .sticky-nav a {
+        font-size: 28px;
+        padding: 0% 6%;
+    }
+    .design-resources-container {
+        margin: 0 15%;
+    }
+    .design-resources-section-heading {
+        font-size: 45px;
+    }
+    .list-subheading {
+        padding-top: 22px;
+        font-size: 24px;
+    }
+    .columns {
+        columns: 3;
+    }
+    .columns a {
+        font-size: 20px;
+    }
+  }
