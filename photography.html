@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css" />
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/nav.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/photography.css" />
+
 </head>
 <body>
     <header class="topnav">
@@ -20,6 +22,254 @@
             <a class="topnav-links" href="about.html"><div>ABOUT</div></a>
         </div>
     </header>
-    <div class="page-title">PHOTOS</div>
+    <div class="page-title">PHOTOGRAPHY</div>
+    <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+      <img src="./assets/images/gallery/roasted-beetjuice-on-tinfoil.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/beach-mussel-shell.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/galactic-tidepool-washington-state.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/mothwing-oaxaca.jpeg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/catepillar-landing.jpeg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/driftwood-washington-state.jpeg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/rainforest-olympic-national-park.jpeg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./assets/images/gallery/pepeekeo-trees.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-flower-1.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/catepillars-philippines.jpeg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/watz-flower-walnut-creek.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-6.jpeg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/mushroom-stump-olympic-national-park.jpeg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+    </div>  
+    <div class="column">
+      <img src="./assets/images/gallery/point-lobos-black-white.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-5.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/oaxaca-moss.jpeg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-2.jpeg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-3.jpeg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/superbloom-4.jpeg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/biolumem-jelly.jpeg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/Yosemite-Half-Dome.jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+
+    </div>
+    <div class="column">
+      <img src="./assets/images/gallery/sweet-pea.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/baby-elephant-seals-ano-nuevo.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/owl-half-moon-bay.jpeg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/joshua-tree-national-park.jpeg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/joshua-tree-at-night.jpeg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/rainbow-lobster-philippines.jpeg" style="width:100%"onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+      <img src="./assets/images/gallery/Kermit-Joshua-Tree.jpg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+  
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="logo-homepage">ELAINE YU</div>
+        <div class="modal-left-arrow"><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+        <div class="modal-right-arrow"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>        
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/roasted-beetjuice-on-tinfoil.jpeg">
+            <div class="caption-container">
+                <p id="caption">Roasted Beets on Tin Foil</p>
+                <p class="numbertext">1 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/pepeekeo-trees.jpeg">
+            <div class="caption-container">
+                <p id="caption">Trees in Pepeekeo, Hawaii</p>
+                <p class="numbertext">2 / 28</p>
+            </div>
+        </div>
+    
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/point-lobos-black-white.jpeg">
+            <div class="caption-container">
+                <p id="caption">Trees in Point Lobos State Natural Reserve, California</p>
+                <p class="numbertext">3 / 28</p>
+            </div>
+        </div>
+        
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/sweet-pea.jpeg">
+            <div class="caption-container">
+                <p id="caption">Sweet pea flower in my garden</p>
+                <p class="numbertext">4 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/beach-mussel-shell.jpeg">
+            <div class="caption-container">
+                <p id="caption">Washington state beach mussel shell</p>
+                <p class="numbertext">5 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-flower-1.jpeg">
+            <div class="caption-container">
+                <p id="caption">Superbloom Southern Calfornia, Joshua Tree National Park</p>
+                <p class="numbertext">6 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-5.jpeg">
+            <div class="caption-container">
+                <p id="caption">Superbloom Southern Calfornia, Joshua Tree National Park</p>
+                <p class="numbertext">7 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/baby-elephant-seals-ano-nuevo.jpeg">
+            <div class="caption-container">
+                <p id="caption">Baby elephant seal, Ano Nuevo State Park, California</p>
+                <p class="numbertext">8 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/galactic-tidepool-washington-state.jpeg">
+            <div class="caption-container">
+                <p id="caption">Washington state beach mussel shell</p>
+                <p class="numbertext">9 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/catepillars-philippines.jpeg">
+            <div class="caption-container">
+                <p id="caption">Washington state beach mussel shell</p>
+                <p class="numbertext">10 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/oaxaca-moss.jpeg">
+            <div class="caption-container">
+                <p id="caption">Washington state beach mussel shell</p>
+                <p class="numbertext">11 / 27</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/owl-half-moon-bay.jpeg">
+            <div class="caption-container">
+                <p id="caption">Baby owl in Half Moon Bay, California</p>
+                <p class="numbertext">12 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/mothwing-oaxaca.jpeg">
+            <div class="caption-container">
+                <p id="caption">Moth wing, Oaxaca, Mexico</p>
+                <p class="numbertext">13 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/watz-flower-walnut-creek.jpg">
+            <div class="caption-container">
+                <p id="caption">The Watz the dog and a wildflower in Mount Diablo State Park, California</p>
+                <p class="numbertext">14 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-2.jpeg">
+            <div class="caption-container">
+                <p id="caption">Lake Elsinore superbloom, California 2019</p>
+                <p class="numbertext">15 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/joshua-tree-national-park.jpeg">
+            <div class="caption-container">
+                <p id="caption">Joshua Tree National Park, California</p>
+                <p class="numbertext">16 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/catepillar-landing.jpeg">
+            <div class="caption-container">
+                <p id="caption">Caterpillar in Chicago</p>
+                <p class="numbertext">17 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-6.jpeg">
+            <div class="caption-container">
+                <p id="caption">Superbloom in Anza-Borrego Desert California</p>
+                <p class="numbertext">18 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-3.jpeg">
+            <div class="caption-container">
+                <p id="caption">Lake Elsinore superbloom, California 2019</p>
+                <p class="numbertext">19 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/joshua-tree-at-night.jpeg">
+            <div class="caption-container">
+                <p id="caption">Lake Elsinore superbloom, California 2019</p>
+                <p class="numbertext">20 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/driftwood-washington-state.jpeg">
+            <div class="caption-container">
+                <p id="caption">Driftwood in Washington state</p>
+                <p class="numbertext">21 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/mushroom-stump-olympic-national-park.jpeg">
+            <div class="caption-container">
+                <p id="caption">Mushroom stump in Olympic National Park</p>
+                <p class="numbertext">22 / 27</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/superbloom-4.jpeg">
+            <div class="caption-container">
+                <p id="caption">Superbloom</p>
+                <p class="numbertext">23 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/rainbow-lobster-philippines.jpeg">
+            <div class="caption-container">
+                <p id="caption">Lobster in Philippines</p>
+                <p class="numbertext">24 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/rainforest-olympic-national-park.jpeg">
+            <div class="caption-container">
+                <p id="caption">Rainforest in Olympic National Park</p>
+                <p class="numbertext">25 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/biolumem-jelly.jpeg">
+            <div class="caption-container">
+                <p id="caption">Jellies</p>
+                <p class="numbertext">26 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/Kermit-Joshua-Tree.jpg">
+            <div class="caption-container">
+                <p id="caption">Kermit the dog in Joshua Tree</p>
+                <p class="numbertext">27 / 28</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="modal-featured-image" src="./assets/images/gallery/Yosemite-Half-Dome.jpg">
+            <div class="caption-container">
+                <p id="caption">Kermit the dog in Joshua Tree</p>
+                <p class="numbertext">28 / 28</p>
+            </div>
+        </div>
+    </div>
+  <script src="./assets/javascripts/photography-model.js"></script>
 </body>
 </html>

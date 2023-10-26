@@ -10,8 +10,6 @@ body {
             overflow: hidden;
         }
 
-
- 
         div#main-top-heading {
             font-family: "gioviale", sans-serif;
             font-weight: 700;
@@ -105,7 +103,7 @@ body {
             position: relative;
             width: 100%;
             /*  TO-DO: CHANGE Height ACCORDING TO MEDIA BREAKTPOINT */
-            height: 105%;
+            height: 155%;
             background-color: rgb(8, 5, 5);
             display: block;
 

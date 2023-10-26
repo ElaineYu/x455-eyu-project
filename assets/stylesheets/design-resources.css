@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display&display=swap');
 
 .sticky-nav {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1cqw solid black;
+    border-top: 1cqw solid black;
     text-align: center;
     font-family: 'Red Hat Display',  sans-serif;
     height: 100%;
@@ -16,6 +16,7 @@
 }
 .sticky-nav a {
     color: black;
+    font-weight: 500;
     text-decoration: none;
     width: 100%;
 }
@@ -183,3 +184,30 @@ ul.columns  {
         font-size: 20px;
     }
   }
+
+    /* Extra Extra large devices (large laptops and desktops, 1650px and up) */
+    @media only screen and (min-width: 1650px) {
+        .sticky-nav {
+            margin: 2% 0;
+        }
+        .sticky-nav a {
+            font-size: 28px;
+            padding: 0% 6%;
+        }
+        .design-resources-container {
+            margin: 0 23.5%;
+        }
+        .design-resources-section-heading {
+            font-size: 45px;
+        }
+        .list-subheading {
+            padding-top: 22px;
+            font-size: 24px;
+        }
+        .columns {
+            columns: 3;
+        }
+        .columns a {
+            font-size: 20px;
+        }
+      }
