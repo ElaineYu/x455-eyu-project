@@ -6,6 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css" />
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/nav.css" />
+    <style>
+        body {
+            font-family:sans-serif;
+        }
+        table td, table th {
+            padding:5px;
+        }
+    </style>
 </head>
 <body>
     <header class="topnav">
@@ -21,5 +29,87 @@
         </div>
     </header>
     <div class="page-title">Field Notes</div>
+    <div id="tableID" class="table-list-container">
+      
+        <table class="table-list" style="height:268px;">
+
+        <thead>
+        <th><button type="button" class="sort" data-sort="timestamp">Date<i class="caret"></i></button></th>
+        <th><button type="button" class="sort" data-sort="articleName">Article<i class="caret"></i></button></th>
+        <th><button type="button" class="sort" data-sort="topicName">Topic<i class="caret"></i></button></th>
+        <th><button type="button" class="sort" data-sort="typeName">Type<i class="caret"></i></button></th>
+        </thead>
+
+        <!-- IMPORTANT, class="list" must be on tbody -->
+        <tbody class="list">
+        <tr data-timestamp="1673786652">
+            <td class="">1/15/2023</td>
+            <td class="articleName">Creating Marble Texture</td>
+            <td class="topicName">Graphic Design</td>
+            <td class="typeName">Tutorial</td>
+        </tr>
+        <tr data-timestamp="1509253200">
+            <td class="">12/15/2022</td>
+            <td class="articleName">Photoshopping Classic Paintings</td>
+            <td class="topicName">Graphic Design</td>
+            <td class="typeName">Code</td>
+        </tr>
+        <tr data-timestamp="1509166800">
+            <td class="">10/28/2017</td>
+            <td class="articleName">The Importance of White Space in Web and Graphic Design</td>
+            <td class="topicName">Web Design</td>
+            <td class="typeName">Case Study</td>
+        </tr>
+        <tr data-timestamp="1509080400">
+            <td class="">10/27/2017</td>
+            <td class="articleName">The Evolution of User Interface (UI) Design: From Skeuomorphism to Flat Design</td>
+            <td class="topicName">Web Animation</td>
+            <td class="typeName">Tutorial</td>
+        </tr>
+        <tr data-timestamp="1508994000">
+            <td class="">10/26/2017</td>
+            <td class="articleName">The Role of Storytelling in Visual Design: Engaging Your Audience</td>
+            <td class="topicName">Code</td>
+            <td class="typeName">Tutorial</td>
+        </tr>
+        <tr data-timestamp="1508821200">
+            <td class="">10/24/2017</td>
+            <td class="articleName">Designing for Accessibility: Making Your Website Inclusive for All Users</td>
+            <td class="topicName">Web Accessibility</td>
+            <td class="typeName">Code</td>
+        </tr>
+        <tr data-timestamp="1508734800">
+            <td class="">10/23/2017</td>
+            <td class="articleName">Navigating the World of Font Licensing: What Designers Need to Know</td>
+            <td class="topicName">Typography</td>
+            <td class="typeName">Business</td>
+        </tr>
+        <tr data-timestamp="1508648400">
+            <td class="">10/22/2017</td>
+            <td class="articleName">The Psychology of Color in Web Design: Creating a Memorable User Experience</td>
+            <td class="topicName">CODE</td>
+            <td class="jSortTotal">Article</td>
+        </tr>
+        <tr data-timestamp="1509426000">
+            <td class="">10/21/2017</td>
+            <td class="articleName">Typography in Motion: Exploring Kinetic Typography and Animated Text</td>
+            <td class="topicName">Yo</td>
+            <td class="typeName">Tutorial</td>
+        </tr>
+        <tr data-timestamp="1508475600">
+            <td class="">10/20/2017</td>
+            <td class="articleName">Branding Through Typography: How Fonts Shape Your Brand's Identity</td>
+            <td class="topicName">Typography</td>
+            <td class="typeName">Tutorial</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <table class="table-footer">
+        <tr>
+        <td class="table-pagination">
+ 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="./assets/javascripts/field-notes.js"></script>
 </body>
 </html>
