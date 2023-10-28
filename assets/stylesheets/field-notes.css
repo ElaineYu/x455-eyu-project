@@ -13,18 +13,6 @@ table td, table th {
     justify-content: center;
 }
 
-.articleName {
-    flex-direction: row;
-    max-width: 550px;
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-    .articleName {
-      flex-direction: column;
-    }
-  }
-
 .sort {
     float: left;
     font-weight: 700;
@@ -34,12 +22,38 @@ table td, table th {
 .article-date {
     vertical-align: top;
 }
+
 .articleName {
+}
+.article-link-and-image {
     display: flex;
     align-items: flex-start;
-    > a {
-        font-weight: 700;
+    flex-direction: row;
+    max-width: 550px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.article-link-and-image:hover {
+    background-color: rgb(61, 60, 60);
+    .article-title {
+        color: white;
     }
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .article-link-and-image {
+      flex-direction: column;
+    }
+  }
+  
+.article-title {
+    padding: 0 3%;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 .article-image {
     width: 150px;
@@ -55,14 +69,7 @@ table td, table th {
     vertical-align: top;
 }
 
-.article-title {
-    padding: 0 3%;
-    > a {
-        font-weight: 600;
-        text-decoration: none;
-        color: black;
-    } 
-}
+
 
 /* Arrow on table sort */
 .table-list .caret:after { 
