@@ -75,6 +75,7 @@ table td, table th {
 .table-list .caret:after { 
     content:""; 
 }
+
 .asc .caret:after {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
@@ -97,6 +98,6 @@ table td, table th {
   font-size: 0; 
 }
 
-/* div.sort .caret { display: none; } */
+div.sort .caret { display: none; }
 div.sort.asc .caret { display: inline-block; }
 div.sort.desc .caret { display: inline-block; }
