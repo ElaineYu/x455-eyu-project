@@ -53,3 +53,25 @@ a:hover {
   @media only screen and (min-width: 1200px) {
     .example {background: pink;}
   }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100wh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 5%;
+}
+
+.social-icons {
+  position: relative;
+  top: 5px;
+  font-size: 30px;
+  padding-left: 20px;
+}
+.footer-text {
+  font-weight: 800;
+  font-size: 31px;
+  padding-left: 40px;
+}

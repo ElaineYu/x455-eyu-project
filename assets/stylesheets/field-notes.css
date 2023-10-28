@@ -69,8 +69,6 @@ table td, table th {
     vertical-align: top;
 }
 
-
-
 /* Arrow on table sort */
 .table-list .caret:after { 
     content:""; 
