@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display&display=swap');
 
 .sticky-nav {
-    border-bottom: 1cqw solid black;
-    border-top: 1cqw solid black;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
     text-align: center;
     font-family: 'Red Hat Display',  sans-serif;
     height: 100%;
@@ -24,18 +24,25 @@
     font-family: 'Red Hat Display',  sans-serif;
     font-weight: 700;
 }
-
+.anchor {
+    display: block; 
+    padding-top: 75px;
+    margin-top: -75px;
+}
 .design-resources-section-heading {
     font-family: 'Red Hat Display',  sans-serif;
 }
 
+.list-subheading-padding-zero {
+    font-family: 'Red Hat Display',  sans-serif;
+    font-weight: 700;
+    padding-top: 0 !important;
+}
 .list-subheading {
     font-family: 'Red Hat Display',  sans-serif;
     font-weight: 700;
 }
-.list-subheading-padding-top-zero {
-    padding-top: 0px;
-}
+
 
 ul.columns  {
     padding-left: 0;
@@ -57,7 +64,6 @@ ul.columns  {
     .sticky-nav a {
         font-size: 18px;
         padding: 0% 2.5%;
-
     }
     .design-resources-container {
         margin: 0;
@@ -65,7 +71,7 @@ ul.columns  {
     .design-resources-section-heading {
         font-size: 32px;
     }
-    .list-subheading {
+    .list-subheading, .list-subheading-padding-zero {
         padding-top: 22px;
         font-size: 22px;
     }
@@ -75,7 +81,6 @@ ul.columns  {
     ul.columns  {
         > li {
             > a {
-                background-color: aqua;
                 font-size: 16px;
             }   
         }
@@ -86,12 +91,12 @@ ul.columns  {
   @media only screen and (min-width: 600px) {
     .sticky-nav a {
         font-size: 18px;
-        padding: 0% 3.5%;
+        padding: 0% 3%;
     }
     .design-resources-container {
         margin: 0 15%;
     }
-    .list-subheading {
+    .list-subheading, .list-subheading-padding-zero {
         padding-top: 20px;
         font-size: 22px;
     }
@@ -123,6 +128,9 @@ ul.columns  {
         padding-top: 20px;
         font-size: 24px;
     }
+    .list-subheading-padding-zero {
+        font-size: 24px;
+    }
     .columns {
         column-count: 2;
     }
@@ -148,6 +156,9 @@ ul.columns  {
     }
     .list-subheading {
         padding-top: 20px;
+        font-size: 22px;
+    }
+    .list-subheading-padding-zero {
         font-size: 22px;
     }
     .columns {
@@ -177,6 +188,9 @@ ul.columns  {
         padding-top: 22px;
         font-size: 24px;
     }
+    .list-subheading-padding-zero {
+        font-size: 24px;
+    }
     .columns {
         columns: 3;
     }
@@ -202,6 +216,9 @@ ul.columns  {
         }
         .list-subheading {
             padding-top: 22px;
+            font-size: 24px;
+        }
+        .list-subheading-padding-zero {
             font-size: 24px;
         }
         .columns {
