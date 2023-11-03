@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .topnav {
     background-color: white;
@@ -62,16 +62,95 @@ footer {
   padding-bottom: 40px;
   padding-left: 30px;
   padding-right: 5%;
+  font-family: 'Red Hat Display',  sans-serif;
+  color: black;
 }
 
 .social-icons {
   position: relative;
   top: 5px;
-  font-size: 30px;
+  font-size: 30px !important;
   padding-left: 20px;
 }
 .footer-text {
   font-weight: 800;
-  font-size: 31px;
+  font-size: 31px !important;
   padding-left: 40px;
+}
+
+.topnav-hamburger {
+  float: right;
+  font-size: 30px;
+}
+
+.hamburger-menu {
+   font-size: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1100px) {
+    .topnav-right {
+      display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1100px) {
+  .topnav-hamburger {
+    display: none;
+  }
+}
+
+/* The Modal (background) */
+.nav-hamburger-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: #fefefe;
+}
+
+/* Modal Content */
+.hamburger-modal-content {
+  padding: 60px 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-menu-items {
+
+}
+.modal-menu-item {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding: 10px;
+  flex-direction: column;
+}
+
+/* The Close Button */
+.closeHamburger {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.fa-close {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.closeHamburger:hover,
+.closeHamburger:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

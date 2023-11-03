@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/nav.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/faq.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
     <header class="topnav">
@@ -22,46 +23,163 @@
             <a class="topnav-links" href="field-notes.html"><div>FIELD NOTES</div></a>
             <a class="topnav-links" href="about.html"><div>ABOUT</div></a>
         </div>
+        <div class="topnav-hamburger" id="hamburgerBtn">
+          <i class="hamburger-menu fa fa-bars"></i>
+       </div>
+       <!-- The Modal -->
+      <div id="hamburgerModal" class="nav-hamburger-modal">
+          <!-- Modal content -->
+          <div class="closeHamburger"><i class="fa fa-close"></i></div>
+          <div class="hamburger-modal-content">
+              <div class="modal-menu-items">
+                  <a class="modal-menu-item" href="about.html"><div>ABOUT</div></a>
+                  <a class="modal-menu-item" href="field-notes.html"><div>FIELD NOTES</div></a>
+                  <a class="modal-menu-item" href="photography.html"><div>PHOTOGRAPHY</div></a>
+                  <a class="modal-menu-item" href="design-resources.html"><div>DESIGN RESOURCES</div></a>
+                  <a class="modal-menu-item" href="faq.html"><div>FAQ</div></a>
+                  <a class="modal-menu-item" href="toy-examples.html"><div>TOY EXAMPLES</div></a>
+              </div>
+          </div>
+      </div>
     </header>
     <div class="page-title">FAQ</div>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <b>How do I reach you?</b> 
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+             Feel free to send me an email at elaineisworking@gmail.com
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+              <b>How do you price your services?</b>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              Our pricing structure is tailored to ensure fairness, transparency, and value for both our clients and our team. We take several factors into account when determining the cost of our services:
+<br>
+<br>
+<b>1. Project Scope:</b> The complexity, scale, and specific requirements of each project significantly influence our pricing. We assess the scope of work to provide an accurate estimate.
+<br>
+<br>
+<b>2. Time and Expertise:</b> Our pricing reflects the expertise, skill level, and experience of our team members involved in your project. We strive to offer competitive rates aligned with the quality and proficiency of our services.
+<br>
+<br>
+<b>3. Value Delivered:</b> We aim to provide exceptional value to our clients. Our pricing considers the impact and value our services bring to your project or business, aiming for a positive return on your investment.
+<br>
+<br>
+<b>4. Market Rates:</b> We conduct thorough market research to ensure our pricing remains competitive and aligned with industry standards, considering local market trends and the value of our services.
+<br>
+<br>
+<b>5. Customized Solutions: </b> Every client is unique, and so are their needs. We offer customized solutions, which may include tiered packages or tailored pricing structures to meet your specific requirements and budget.
+<br>
+<br>
+<b>6. Clear Communication:</b> We maintain transparent and open communication regarding our pricing. Before commencing any project, we provide detailed quotes and breakdowns, ensuring you understand the costs involved.
+<br>
+<br>
+Our goal is to provide high-quality services at fair and competitive rates, ensuring that you receive the best value for your investment.
+
+For specific pricing details related to your project, we encourage you to reach out to us directly. Our team will be more than happy to discuss your project requirements and provide a personalized quote.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+             <b>What can I expect from the process?</b>  
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              We pride ourselves on a streamlined and collaborative process that ensures a smooth and successful experience for our clients. Here's what you can expect when working with us:
+              <br><br>
+              <b>1. Initial Consultation:</b> To kick off the process, we start with an initial consultation. This is where we get to know you, your business, your goals, and the specific requirements of your project. This step allows us to align our services with your needs.
+              <br><br>
+              <b>2. Planning and Proposal:</b> After the initial consultation, we provide a detailed project proposal. This proposal includes a breakdown of services, estimated timelines, and a transparent pricing structure to give you a comprehensive overview of the project scope.
+              <br><br>
+              <b>3. Design and Development:</b> Once the proposal is approved, we move into the design and development phase. For graphic design projects, this involves creating concepts, revisions, and finalizing designs. In web development, this phase includes building the site, coding, testing, and ensuring functionality across various devices.
+              <br><br>
+              <b>4. Feedback and Revisions:</b> We encourage open communication throughout the process. Your feedback is valuable, and we incorporate it into the design or development, ensuring that the final product aligns with your vision.
+              <br><br>
+              <b>5. Quality Assurance:</b> Before final delivery, our team conducts a comprehensive review and quality assurance process to ensure that the project meets the highest standards and is ready for launch or implementation.
+              <br><br>
+              <b>6. Delivery and Support:</b> Upon completion, we deliver the finalized project to you. We offer ongoing support and assistance, ensuring that you're comfortable with the final product and are available to address any questions or concerns that may arise after the project is complete.
+              <br><br>
+              Our aim is to make the process as transparent, collaborative, and efficient as possible, ensuring that your vision is realized and the final product exceeds your expectations.
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <b>Do you offer a free consultation?</b>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <b>Yes!</b> To kick off the process, we start with a free initial consultation. This is where we get to know you, your business, your goals, and the specific requirements of your project. This step allows us to align our services with your needs.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <b>What kind of background and experience do you have?</b>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              I have 5 years of professional web programming experience, ranging from consulting small businesses to large corporations. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <b>What results can I expect?</b>
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Our goal is to deliver exceptional results that align with your business objectives and surpass your expectations. While the specific outcomes may vary depending on the nature of your project, here are some of the results you can typically expect from our services:
+<br><br>
+<b>1. Professional Design or Development:</b> Whether it's a logo, website, branding materials, or a custom web application, our focus is on delivering professional and high-quality designs or developments tailored to meet your unique needs.
+<br><br>
+<b>2. Enhanced Brand Image:</b> For graphic design services, you can anticipate an improved brand image, with visually appealing and cohesive designs that convey your brand's message effectively.
+<br><br>
+<b>3. Functional and User-Friendly Websites:</b> In web development, our aim is to deliver websites that are not only visually engaging but also functional, responsive, and user-friendly. This includes a focus on usability, performance, and search engine optimization (SEO) best practices.
+<br><br>
+<b>4. Increased Engagement and Conversions:</b> A well-crafted design or website can lead to increased user engagement and, ultimately, higher conversion rates. Whether it's more traffic, leads, or sales, our services are designed to positively impact your business goals.
+<br><br>
+<b>5. Customized Solutions:</b> We pride ourselves on creating customized solutions that cater specifically to your business needs, reflecting your brand identity and helping you stand out in your industry.
+<br><br>
+<b>6. Long-Term Support:</b> Our commitment doesn't end with the project's completion. We offer ongoing support and assistance to ensure the continued success of the delivered design or website.
+<br><br>
+It's important to note that while we strive for outstanding results, the success of a design or website may also be influenced by various external factors, including your marketing efforts, industry changes, and user preferences. We work diligently to provide you with the best possible solution, but the ultimate impact might also depend on these external elements.
+<br><br>
+Should you have more specific inquiries about the potential outcomes of your project or wish to discuss the achievable results in greater detail, please feel free to reach out to us directly.
             </div>
           </div>
         </div>
       </div>
+      <footer>
+        <i class="social-icons fa fa-instagram"></i>
+        <i class="social-icons fa fa-behance"></i>
+        <i class="social-icons fa fa-linkedin"></i>
+        <div class="footer-text">Let's Talk</div>
+      </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+      <script src="./assets/javascripts/hamburger-menu-modal.js"></script>
+    </body>
 </html>

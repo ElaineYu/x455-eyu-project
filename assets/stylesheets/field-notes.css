@@ -17,13 +17,11 @@ table td, table th {
     float: left;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .article-date {
     vertical-align: top;
-}
-
-.articleName {
 }
 .article-link-and-image {
     display: flex;
@@ -34,8 +32,10 @@ table td, table th {
     padding: 5px;
 }
 
-.article-link-and-image:hover {
-    background-color: rgb(61, 60, 60);
+ /* .article-link-and-image  */
+ tbody tr:hover {
+    background-color: rgb(170, 170, 170);
+    color: white;
     .article-title {
         color: white;
     }
@@ -50,17 +50,17 @@ table td, table th {
   
 .article-title {
     padding: 0 3%;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 22px;
 }
 .article-image {
     width: 150px;
 }
 
 .topicName {
-    padding-right: 15%;
+    padding-right: 10%;
     vertical-align: top;
     text-transform: uppercase;
 }
