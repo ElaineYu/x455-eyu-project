@@ -41,6 +41,17 @@ iframe.youtube-video {
     flex-direction: column;
 }
 
+.field-note-caption-hero {
+    color: gray;
+}
+.field-note-author {
+    font-size: 20px;
+}
+.field-note-paragraph {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .field-notes-container {
