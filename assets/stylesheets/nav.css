@@ -54,23 +54,19 @@ a:hover {
     .example {background: pink;}
   }
 
-footer {
+  footer {
   display: flex;
   flex-direction: row;
   width: 100wh;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 5%;
+  padding: 40px 50px;
   font-family: 'Red Hat Display',  sans-serif;
   color: black;
 }
-
 .social-icons {
   position: relative;
   top: 5px;
   font-size: 30px !important;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer-text {
   font-weight: 800;

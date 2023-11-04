@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css" />
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/nav.css" />
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/photography.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="topnav">
@@ -21,6 +21,24 @@
             <a class="topnav-links" href="photography.html"><div>PHOTOGRAPHY</div></a>
             <a class="topnav-links" href="field-notes.html"><div>FIELD NOTES</div></a>
             <a class="topnav-links" href="about.html"><div>ABOUT</div></a>
+        </div>
+        <div class="topnav-hamburger" id="hamburgerBtn">
+            <i class="hamburger-menu fa fa-bars"></i>
+         </div>
+         <!-- The Modal -->
+        <div id="hamburgerModal" class="nav-hamburger-modal">
+            <!-- Modal content -->
+            <div class="closeHamburger"><i class="fa fa-close"></i></div>
+            <div class="hamburger-modal-content">
+                <div class="modal-menu-items">
+                    <a class="modal-menu-item" href="about.html"><div>ABOUT</div></a>
+                    <a class="modal-menu-item" href="field-notes.html"><div>FIELD NOTES</div></a>
+                    <a class="modal-menu-item" href="photography.html"><div>PHOTOGRAPHY</div></a>
+                    <a class="modal-menu-item" href="design-resources.html"><div>DESIGN RESOURCES</div></a>
+                    <a class="modal-menu-item" href="faq.html"><div>FAQ</div></a>
+                    <a class="modal-menu-item" href="toy-examples.html"><div>TOY EXAMPLES</div></a>
+                </div>
+            </div>
         </div>
     </header>
     <div class="page-title">PHOTOGRAPHY</div>
@@ -65,6 +83,12 @@
 
     </div>
   </div>
+      <footer>
+        <i class="social-icons fa fa-instagram"></i>
+        <i class="social-icons fa fa-behance"></i>
+        <i class="social-icons fa fa-linkedin"></i>
+        <div class="footer-text">Let's Talk</div>
+      </footer>
   <div id="myModal" class="modal">
   
     <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -271,6 +295,7 @@
             </div>
         </div>
     </div>
+    <script src="./assets/javascripts/hamburger-menu-modal.js"></script>
   <script src="./assets/javascripts/photography-model.js"></script>
 </body>
 </html>

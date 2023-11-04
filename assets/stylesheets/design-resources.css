@@ -43,7 +43,6 @@
     font-weight: 700;
 }
 
-
 ul.columns  {
     padding-left: 0;
     > li {
@@ -58,7 +57,6 @@ ul.columns  {
     }
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .sticky-nav a {
@@ -70,6 +68,7 @@ ul.columns  {
     }
     .design-resources-section-heading {
         font-size: 32px;
+        margin: 25px 50px;
     }
     .list-subheading, .list-subheading-padding-zero {
         padding-top: 22px;
@@ -77,6 +76,7 @@ ul.columns  {
     }
     .columns {
         column-count: 1;
+        margin: 0 50px;
     }
     ul.columns  {
         > li {
