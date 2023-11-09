@@ -14,6 +14,5 @@ body {
     background-color: white;
 }
 .accordion-button:not(.collapsed) {
-    background-color: rgb(168, 235, 233);
-    color: red;
+    background-color: rgb(103, 228, 176);
 }
