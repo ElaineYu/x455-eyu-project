@@ -115,7 +115,7 @@ div.logo-homepage {
 
 .mySlides {
     > img.modal-featured-image {
-        height: 70%;
+        height: 60%;
         position: absolute;
         top: 50%;
         left: 50%;
