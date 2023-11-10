@@ -3,13 +3,17 @@
 body {
     font-family: 'Red Hat Display',  sans-serif;
 }
+.field-note-type {
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
 .field-note-title {
-    font-family: 'Red Hat Display',  sans-serif;
     font-weight: 700;
     text-align: center;
     padding: 20px;
 }
-
 .field-note-hero {
     width: 100%;
     display: block;
@@ -60,6 +64,9 @@ iframe.youtube-video {
     .field-note-title {
         font-size: 50px;
     }
+    .field-note-type {
+        font-size: 20px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -69,6 +76,9 @@ iframe.youtube-video {
     }
     .field-note-title {
         font-size: 70px;
+    }
+    .field-note-type {
+        font-size: 25px;
     }
 }
 
@@ -80,6 +90,9 @@ iframe.youtube-video {
     .field-note-title {
         font-size: 80px;
     }
+    .field-note-type {
+        font-size: 30px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -90,6 +103,9 @@ iframe.youtube-video {
     .field-note-title {
         font-size: 90px;
     }
+    .field-note-type {
+        font-size: 30px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -99,5 +115,8 @@ iframe.youtube-video {
     }
     .field-note-title {
         font-size: 125px;
+    }
+    .field-note-type {
+        font-size: 35px;
     }
 }
