@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     height: 100vh;
@@ -22,7 +22,7 @@ body {
     line-height: 0.9;
     padding: 60px 0 5px 0;
 
-    -webkit-text-stroke: 2px black;
+    /* -webkit-text-stroke: 2px black;
     background-image: linear-gradient(
         45deg,
         #fff070 0%,
@@ -33,7 +33,7 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: glow 5s linear infinite;
-      background-size: 200%;
+      background-size: 200%; */
     }
     @-webkit-keyframes glow {
       0% {
@@ -59,31 +59,6 @@ body {
     }
     
 
-#heading-lets-explore {
-    color: white;
-    font-family: 'Red Hat Display',  sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-kerning: auto;
-    letter-spacing: 10px;
-    line-height: 1.2;
-    position: absolute;
-    display: flex;
-    text-align: center;
-    /* left: 50%;
-    transform: translateX(-50%); */
-    animation: neonblue 2s ease-in-out infinite alternate;
-}
- @keyframes neonblue {
-    from {
-        text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
-        0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
-    }
-    to {
-        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
-        0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
-    }
- } 
 .wave-container {
     position: relative;
     width: 100%;
@@ -190,19 +165,98 @@ body {
             animation: MoveUpDown 2.5s linear infinite;
         }
 
+        #heading-lets-explore {
+            color: white;
+            font-family: 'Red Hat Display',  sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-kerning: auto;
+            letter-spacing: 10px;
+            line-height: 1.2;
+            position: absolute;
+            bottom: 20%;
+            display: flex;
+            text-align: center;
+            animation: neonblue 2s ease-in-out infinite alternate;
+        }
+         @keyframes neonblue {
+            from {
+                text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
+                0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
+            }
+            to {
+                text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
+                0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+            }
+         } 
+
+.porfolio-container {
+    background-color: rgba(16,28,25,100); 
+    display: block;
+    position: relative;
+}
+.portfolio-margin {
+    margin: 0 5%;
+}
 .portfolio-section-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(16,28,25,100);
-    height: 500px;
   }
+.portfolio-image-container-ad-campaigns-madmax,
+.portfolio-image-container-ad-campaigns-think,
+.portfolio-image-container,
+.portfolio-image-container-print,
+.portfolio-image-container-branding {
+    display: flex; 
+    width: 100%; 
+    height: 200px;
+    background-color: rgba(16,28,25,100);
+    position: relative;
+}
+.portfolio-image-foreground-left-5 {
+    position: absolute; 
+    left: 5%; 
+    transform: translateX(-5%); 
+    z-index: 1;
+}
+.portfolio-image-background-left-5 {
+    position: absolute; 
+    left: 5%; 
+    transform: translateX(-5%);
+}
+.portfolio-image-foreground-center {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
+}
+.portfolio-image-background-right-2 {
+    position: absolute; 
+    right: 2%; 
+    transform: translateX(-2%);
+}
+.porfolio-image-background-25 {
+    position: absolute; 
+    left: 25%; 
+    transform: translateX(-25%);
+}
+.porfolio-image-background-right-10 {
+    position: absolute; 
+    right: 10%; 
+    transform: translateX(-10%);
+}
+.porfolio-image-foreground-right-2 {
+    position: absolute; 
+    right: 2%; 
+    transform: translateX(-2%); 
+    z-index: 1;
+}
 
 .portfolio-heading-text {
     display: block;
     background-color: rgba(16,28,25,100);
-
-    /* Regular formatting */
     text-align: center;
     font-family: 'Red Hat Display',  sans-serif;
     font-weight: 500;
@@ -211,8 +265,19 @@ body {
     letter-spacing: 3px;
     line-height: 1.2;
     color: white;
-    /* animation: neonblue 2s ease-in-out infinite alternate; */
     text-shadow: 1px 1px 2px #fff, 0 0 1em #228dff, 0 0 0.2em #228dff; 
+}
+
+#mad-max-mobile {
+    object-fit: cover;
+}
+#mad-max-poster-bus-station {
+    object-fit: cover; 
+    object-position: 0 110%; 
+}
+#think-ad-campaign-mermaid {
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -230,10 +295,80 @@ body {
         margin-top: 130%;
     }
     .wave-container {
-        height: 130%;
+        height: 1300px;
+    }
+    .portfolio-section-container { 
+        height: 350px;
     }
     .portfolio-heading-text {
         font-size: 40px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 50px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 50px; 
+    }
+    .portfolio-image-container {
+        height: 50px; 
+    }
+    .portfolio-image-container-print {
+        height: 300px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 500px; 
+    }
+    #mad-max-mobile {
+        height: 160px; 
+        width: 170px; 
+    }
+    #mad-max-poster {
+        height: 250px; 
+        margin-top: -120px;
+    }
+    #mad-max-poster-bus-station {
+        height: 160px;
+        width: 180px; 
+    }
+    #think-ad-campaign-banner {
+        height: 220px; 
+        margin-top: -110px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 170px; 
+        margin-top: -80px; 
+    }
+    #food-alchemy-magazine {
+        height: 200px; 
+        margin-top: -110px;
+    }
+    #bioarchitect-magazine {
+        height: 170px; 
+        margin-top: 70px;
+    }
+    #latham-book-cover {
+        height: 180px; 
+        margin-top: 200px
+    }
+    #alethio-business-card-front {
+        height: 100px; 
+        margin-top: -80px;
+    }
+    #alethio-business-card-back {
+        height: 100px; 
+        margin-top: -50px
+    }
+    #alethio-almanac-envelope {
+        height: 100px; 
+        margin-top: 170px;
+    }
+    #alethio-almanac-letter {
+        height: 350px; 
+        margin-top: 65px;
+    }
+    #alethio-almanac-truck {
+        height: 170px; 
+        margin-top: 330px;
     }
 }
 
@@ -251,11 +386,83 @@ body {
         margin-top: 130%;
     }
     .wave-container {
-        background-color: blue;
-        height: 160%;
+        /* background-color: blue; */
+        height: 1700px;
+    }
+    .portfolio-section-container { 
+        height: 450px;
+    }
+    .portfolio-heading-text {
+        font-size: 50px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 50px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 50px; 
+    }
+    .portfolio-image-container {
+        height: 50px; 
+    }
+    .portfolio-image-container-print {
+        height: 300px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 500px; 
+    }
+    #mad-max-mobile {
+        height: 220px; 
+        width: 230px; 
+        margin-top: -20px;
     }
     #mad-max-poster {
-        height: 300px;
+        height: 350px; 
+        margin-top: -200px;
+    }
+    #mad-max-poster-bus-station {
+        height: 220px; 
+        width: 230px; 
+        margin-top: -20px;
+    }
+    #think-ad-campaign-banner {
+        height: 300px; 
+        margin-top: -120px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 195px; 
+        margin-top: -80px; 
+    }
+    #food-alchemy-magazine {
+        height: 250px; 
+        margin-top: -140px;
+    }
+    #bioarchitect-magazine {
+        height: 200px; 
+        margin-top: 60px;
+    }
+    #latham-book-cover {
+        height: 240px; 
+        margin-top: 160px
+    }
+    #alethio-business-card-front {
+        height: 130px; 
+        margin-top: -100px;
+    }
+    #alethio-business-card-back {
+        height: 130px; 
+        margin-top: -70px
+    }
+    #alethio-almanac-envelope {
+        height: 130px; 
+        margin-top: 170px;
+    }
+    #alethio-almanac-letter {
+        height: 450px; 
+        margin-top: 65px;
+    }
+    #alethio-almanac-truck {
+        height: 200px; 
+        margin-top: 360px;
     }
 }
 
@@ -273,8 +480,82 @@ body {
         margin-top: 120%;
     }
     .wave-container {
-        background-color: red;
-        height: 180%;
+        /* background-color: red; */
+        height: 2000px;
+    }
+    .portfolio-section-container { 
+        height: 590px;
+    }
+    .portfolio-heading-text {
+        font-size: 70px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 50px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 50px; 
+    }
+    .portfolio-image-container-print {
+        height: 350px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 700px; 
+    }
+    #mad-max-mobile {
+        height: 220px; 
+        width: 230px; 
+        margin-top: -50px;
+    }
+    #mad-max-poster {
+        height: 450px; 
+        margin-top: -200px;
+    }
+    #mad-max-poster-bus-station {
+        height: 220px;
+        width: 220px; 
+        margin-top: -50px;
+    }
+    #think-ad-campaign-banner {
+        height: 380px; 
+        margin-top: -170px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 250px; 
+        margin-top: -120px; 
+    }
+    #food-alchemy-magazine {
+        height: 300px; 
+        margin-top: -180px;
+    }
+    #bioarchitect-magazine {
+        height: 250px; 
+        margin-top: 70px;
+    }
+    #latham-book-cover {
+        height: 260px; 
+        margin-top: 200px
+    }
+    #alethio-business-card-front {
+        height: 180px; 
+        margin-top: -140px;
+        margin-left: -30px; 
+    }
+    #alethio-business-card-back {
+        height: 180px; 
+        margin-top: -70px;
+        margin-right: -50px; 
+    }
+    #alethio-almanac-envelope {
+        height: 160px; 
+        margin-top: 170px;
+    }
+    #alethio-almanac-letter {
+        height: 550px; 
+        margin-top: 65px;
+    }
+    #alethio-almanac-truck {
+        height: 200px; 
+        margin-top: 380px;
     }
 }
 
@@ -286,13 +567,86 @@ body {
     #heading-lets-explore {
         font-size: 140px;
         margin-top: 125%;
-
     }
     .wave-container {
-        background-color: purple;
-        height: 200%;
+        /* background-color: purple; */
+        height: 2500px;
     }
-
+    .portfolio-section-container { 
+        height: 800px;
+    }
+    .portfolio-heading-text {
+        font-size: 90px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 100px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 100px; 
+    }
+    .portfolio-image-container-print {
+        height: 470px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 920px; 
+    }
+    #mad-max-mobile {
+        height: 300px; 
+        width: 310px; 
+        margin-top: -50px;
+    }
+    #mad-max-poster {
+        height: 600px;
+        width: 100%; 
+        margin-top: -240px;
+    }
+    #mad-max-poster-bus-station {
+        height: 300px; 
+        width: 300px;
+        margin-top: -50px;
+    }
+    #think-ad-campaign-banner {
+        height: 490px; 
+        margin-top: -190px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 290px; 
+        margin-top: -120px; 
+    }
+    #food-alchemy-magazine {
+        height: 400px; 
+        margin-top: -220px;
+    }
+    #bioarchitect-magazine {
+        height: 350px; 
+        margin-top: 70px;
+    }
+    #latham-book-cover {
+        height: 360px; 
+        margin-top: 300px
+    }
+    #alethio-business-card-front {
+        height: 210px; 
+        margin-top: -180px;
+        margin-left: -30px; 
+    }
+    #alethio-business-card-back {
+        height: 210px; 
+        margin-top: -70px;
+        margin-right: -50px; 
+    }
+    #alethio-almanac-envelope {
+        height: 260px; 
+        margin-top: 260px;
+    }
+    #alethio-almanac-letter {
+        height: 800px; 
+        margin-top: 65px;
+    }
+    #alethio-almanac-truck {
+        height: 300px; 
+        margin-top: 580px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -305,8 +659,82 @@ body {
         margin-top: 125%;
     }
     .wave-container {
-        background-color: orange;
-        height: 230%;
+        /* background-color: orange; */
+        height: 3000px;
+    }
+    .portfolio-section-container { 
+        height: 1000px;
+    }
+    .portfolio-heading-text {
+        font-size: 90px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 200px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 200px; 
+    }
+    .portfolio-image-container-print {
+        height: 570px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 1020px; 
+    }
+    #mad-max-mobile {
+        height: 370px; 
+        width: 380px; 
+        margin-top: -50px;
+    }
+    #mad-max-poster {
+        height: 850px; 
+        margin-top: -220px;
+    }
+    #mad-max-poster-bus-station {
+        height: 370px; 
+        width: 370px;
+        margin-top: -50px;
+    }
+    #think-ad-campaign-banner {
+        height: 690px; 
+        margin-top: -170px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 390px; 
+        margin-top: -120px; 
+    }
+    #food-alchemy-magazine {
+        height: 500px; 
+        margin-top: -220px;
+    }
+    #bioarchitect-magazine {
+        height: 450px; 
+        margin-top: 70px;
+    }
+    #latham-book-cover {
+        height: 460px; 
+        margin-top: 300px
+    }
+    #alethio-business-card-front {
+        height: 310px; 
+        margin-top: -180px;
+        margin-left: -30px; 
+    }
+    #alethio-business-card-back {
+        height: 210px; 
+        margin-top: -70px;
+        margin-right: -50px; 
+    }
+    #alethio-almanac-envelope {
+        height: 260px; 
+        margin-top: 260px;
+    }
+    #alethio-almanac-letter {
+        height: 800px; 
+        margin-top: 65px;
+    }
+    #alethio-almanac-truck {
+        height: 300px; 
+        margin-top: 580px;
     }
 }
 
@@ -320,13 +748,104 @@ body {
         margin-top: 130%;
     }
     .wave-container {
-        background-color: yellow;
-        height: 350%;
+        /* background-color: yellow; */
+        height: 4000px;
+    }
+    .portfolio-section-container { 
+        height: 1000px;
+    }
+    .portfolio-heading-text {
+        font-size: 120px;
+    }
+    .portfolio-image-container-ad-campaigns-madmax {
+        height: 300px; 
+    }
+    .portfolio-image-container-ad-campaigns-think {
+        height: 300px; 
+    }
+    .portfolio-image-container-print {
+        height: 770px; 
+    }
+    .portfolio-image-container-branding {        
+        height: 1120px; 
+    }
+    #mad-max-mobile {
+        height: 470px; 
+        width: 480px; 
+        margin-top: -50px;
+    }
+    #mad-max-poster {
+        height: 950px; 
+        margin-top: -360px;
+    }
+    #mad-max-poster-bus-station {
+        height: 470px; 
+        width: 470px;
+        margin-top: -50px;
+    }
+    #think-ad-campaign-banner {
+        height: 740px; 
+        margin-top: -170px;
+    }
+    #think-ad-campaign-mermaid {
+        width: 430px; 
+        margin-top: -120px; 
+    }
+    #food-alchemy-magazine {
+        height: 650px; 
+        margin-top: -320px;
+    }
+    #bioarchitect-magazine {
+        height: 450px; 
+        margin-top: 70px;
+    }
+    #latham-book-cover {
+        height: 560px; 
+        margin-top: 400px
+    }
+    #alethio-business-card-front {
+        height: 310px; 
+        margin-top: -180px;
+        margin-left: -30px; 
+    }
+    #alethio-business-card-back {
+        height: 310px; 
+        margin-top: -70px;
+        margin-right: -50px; 
+    }
+    #alethio-almanac-envelope {
+        height: 360px; 
+        margin-top: 360px;
+    }
+    #alethio-almanac-letter {
+        height: 900px; 
+        margin-top: 165px;
+    }
+    #alethio-almanac-truck {
+        height: 400px; 
+        margin-top: 780px;
     }
 }
 
 .homepage-footer {
-    display: block;
     background-color: rgba(16,28,25,100);
     color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100wh;
+    padding: 40px 50px;
+    font-family: 'Red Hat Display',  sans-serif;
 }
+
+.copyright-text {
+    padding-left: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: auto;
+    order: 2;
+  }
+  .copyright-social-icon {
+    padding: 0 5px;
+    font-size: 16px !important;
+    font-weight: 300;
+  }

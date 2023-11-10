@@ -73,6 +73,18 @@ footer {
   font-size: 31px !important;
   padding-left: 40px;
 }
+.copyright-text {
+  padding-left: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: auto;
+  order: 2;
+}
+.copyright-social-icon {
+  padding: 0 5px;
+  font-size: 16px !important;
+  font-weight: 300;
+}
 
 .topnav-hamburger {
   float: right;
@@ -119,9 +131,6 @@ footer {
   justify-content: center;
 }
 
-.modal-menu-items {
-
-}
 .modal-menu-item {
   text-decoration: none;
   font-size: 25px;
