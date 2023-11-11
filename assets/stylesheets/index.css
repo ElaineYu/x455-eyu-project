@@ -35,29 +35,29 @@ body {
       animation: glow 5s linear infinite;
       background-size: 200%; */
     }
-    @-webkit-keyframes glow {
-      0% {
-        background-position: 0% 43%;
-      }
-      50% {
-        background-position: 100% 58%;
-      }
-      100% {
-        background-position: 0% 43%;
-      }
+@-webkit-keyframes glow {
+    0% {
+    background-position: 0% 43%;
     }
-    @keyframes glow {
-      0% {
-        background-position: 0% 43%;
-      }
-      50% {
-        background-position: 100% 58%;
-      }
-      100% {
-        background-position: 0% 43%;
-      }
+    50% {
+    background-position: 100% 58%;
     }
-    
+    100% {
+    background-position: 0% 43%;
+    }
+}
+@keyframes glow {
+    0% {
+    background-position: 0% 43%;
+    }
+    50% {
+    background-position: 100% 58%;
+    }
+    100% {
+    background-position: 0% 43%;
+    }
+}
+
 
 .wave-container {
     position: relative;
@@ -72,99 +72,98 @@ body {
     position: relative;
 } 
 
-        #large-wave-topmost {
-            position: absolute;
-            width: 102%;
-            height: auto;
-            background-color: white; 
-            animation: MoveUpDown 5s linear infinite;
-        }
-        #large-wave-second-topmost {
-            position: absolute;
-            width: 102%;
-            height: auto;  
-            margin-top: 35%;
-            /* background-color: gold; */
-            animation: MoveUpDown 5s linear infinite;
-        }
-        #small-wave-1-back-most-row {
-            /* background-color: red; */
-            position: absolute;
-            height: auto;  
-            width: 30%;
-            margin-top: 50%;
-            margin-left: -10%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-2-second-row-right {
-            position: absolute;
-            height: auto;  
-            width: 35%;
-            margin-top: 58%;
-            margin-left: 7%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-3-second-row-left {
-            /* background-color: orange; */
-            position: absolute;
-            height: auto;  
-            width: 35%;
-            margin-top: 58%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        #small-wave-4-third-row-right {
-            /* background-color: lightyellow; */
-            position: absolute;
-            height: auto;  
-            width: 46%;
-            margin-top: 67%;
-            margin-left: 20%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-5-third-row-left {
-            /* background-color: yellow; */
-            position: absolute;
-            height: auto;  
-            width: 46%;
-            margin-top: 67%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        #small-wave-6-fourth-row-right {
-            /* background-color: lightgreen; */
-            position: absolute;
-            height: auto;  
-            width: 62%;
-            margin-top: 77%;
-            margin-left: 42%;
-            animation: MoveUpDown 4s linear infinite;
-        }
-        #small-wave-7-fourth-row-left {
-            /* background-color: green; */
-            position: absolute;
-            height: auto;  
-            width: 70%;
-            margin-top: 80%;
-            margin-left: -25%;
-            animation: MoveUpDown 3s linear infinite;
-        }
-        @keyframes MoveUpDown {
-            0%   {left: 0px; top: 0px;}
-            50%  {top: 30px;}
-            100% {left: 0px; top: 0px;}
-        }
-        #white-whale {
-            position: absolute;
-            height: auto;  
-            width: 105%;
-            -webkit-transform: scaleX(-1) rotate(-45deg);
-            transform: scaleX(-1) rotate(-45deg);
-            margin-top: 80%;
-            margin-left: -15%;
-            animation: MoveUpDown 2.5s linear infinite;
-        }
-
+#large-wave-topmost {
+    position: absolute;
+    width: 102%;
+    height: auto;
+    background-color: white; 
+    animation: MoveUpDown 5s linear infinite;
+}
+#large-wave-second-topmost {
+    position: absolute;
+    width: 102%;
+    height: auto;  
+    margin-top: 35%;
+    /* background-color: gold; */
+    animation: MoveUpDown 5s linear infinite;
+}
+#small-wave-1-back-most-row {
+    /* background-color: red; */
+    position: absolute;
+    height: auto;  
+    width: 30%;
+    margin-top: 50%;
+    margin-left: -10%;
+    animation: MoveUpDown 4s linear infinite;
+}
+#small-wave-2-second-row-right {
+    position: absolute;
+    height: auto;  
+    width: 35%;
+    margin-top: 58%;
+    margin-left: 7%;
+    animation: MoveUpDown 4s linear infinite;
+}
+#small-wave-3-second-row-left {
+    /* background-color: orange; */
+    position: absolute;
+    height: auto;  
+    width: 35%;
+    margin-top: 58%;
+    margin-left: -25%;
+    animation: MoveUpDown 3s linear infinite;
+}
+#small-wave-4-third-row-right {
+    /* background-color: lightyellow; */
+    position: absolute;
+    height: auto;  
+    width: 46%;
+    margin-top: 67%;
+    margin-left: 20%;
+    animation: MoveUpDown 4s linear infinite;
+}
+#small-wave-5-third-row-left {
+    /* background-color: yellow; */
+    position: absolute;
+    height: auto;  
+    width: 46%;
+    margin-top: 67%;
+    margin-left: -25%;
+    animation: MoveUpDown 3s linear infinite;
+}
+#small-wave-6-fourth-row-right {
+    /* background-color: lightgreen; */
+    position: absolute;
+    height: auto;  
+    width: 62%;
+    margin-top: 77%;
+    margin-left: 42%;
+    animation: MoveUpDown 4s linear infinite;
+}
+#small-wave-7-fourth-row-left {
+    /* background-color: green; */
+    position: absolute;
+    height: auto;  
+    width: 70%;
+    margin-top: 80%;
+    margin-left: -25%;
+    animation: MoveUpDown 3s linear infinite;
+}
+@keyframes MoveUpDown {
+    0%   {left: 0px; top: 0px;}
+    50%  {top: 30px;}
+    100% {left: 0px; top: 0px;}
+}
+#white-whale {
+    position: absolute;
+    height: auto;  
+    width: 105%;
+    -webkit-transform: scaleX(-1) rotate(-45deg);
+    transform: scaleX(-1) rotate(-45deg);
+    margin-top: 80%;
+    margin-left: -15%;
+    animation: MoveUpDown 2.5s linear infinite;
+}
 
 .porfolio-container {
     background-color: rgba(16,28,25,100); 
@@ -271,30 +270,30 @@ body {
 }
 
 
-        #heading-lets-explore {
-            color: white;
-            font-family: 'Red Hat Display',  sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            font-kerning: auto;
-            letter-spacing: 10px;
-            line-height: 1.2;
-            position: absolute;
-            bottom: 20%;
-            display: flex;
-            text-align: center;
-            animation: neonblue 2s ease-in-out infinite alternate;
-        }
-         @keyframes neonblue {
-            from {
-                text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
-                0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
-            }
-            to {
-                text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
-                0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
-            }
-         } 
+#heading-lets-explore {
+    color: white;
+    font-family: 'Red Hat Display',  sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-kerning: auto;
+    letter-spacing: 10px;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    text-align: center;
+    animation: neonblue 2s ease-in-out infinite alternate;
+}
+@keyframes neonblue {
+    from {
+        text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
+        0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
+    }
+    to {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
+    0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+    }
+} 
 
 #mad-max-mobile {
     object-fit: cover;
@@ -855,19 +854,24 @@ body {
     display: flex;
     flex-direction: row;
     width: 100wh;
-    padding: 40px 50px;
+    padding: 40px 50px 10px 50px;
     font-family: 'Red Hat Display',  sans-serif;
 }
-
-.copyright-text {
-    padding-left: 40px;
+.homepage-copyright-footer {
+    background-color: rgba(16,28,25,100);
+    display: flex;
+    flex-direction: row;
+    width: 100wh;
+    padding: 10px 50px 50px 50px;
+    font-family: 'Red Hat Display',  sans-serif;
+}
+.homepage-copyright-text {
+    color: white;
     font-weight: 300;
     font-size: 16px;
-    margin-left: auto;
-    order: 2;
-  }
-  .copyright-social-icon {
+}
+.copyright-social-icon {
     padding: 0 5px;
     font-size: 16px !important;
     font-weight: 300;
-  }
+}

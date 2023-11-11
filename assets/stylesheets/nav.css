@@ -58,7 +58,8 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100wh;
-  padding: 40px 50px;
+  padding: 40px 50px 10px 50px;
+
   font-family: 'Red Hat Display',  sans-serif;
   color: black;
 }
@@ -73,12 +74,18 @@ footer {
   font-size: 31px !important;
   padding-left: 40px;
 }
+
+.copyright-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100wh;
+  padding: 10px 50px 50px 50px;
+  font-family: 'Red Hat Display',  sans-serif;
+}
 .copyright-text {
-  padding-left: 40px;
+  color: black;
   font-weight: 300;
   font-size: 16px;
-  margin-left: auto;
-  order: 2;
 }
 .copyright-social-icon {
   padding: 0 5px;
