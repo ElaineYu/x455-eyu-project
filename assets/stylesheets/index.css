@@ -165,30 +165,6 @@ body {
             animation: MoveUpDown 2.5s linear infinite;
         }
 
-        #heading-lets-explore {
-            color: white;
-            font-family: 'Red Hat Display',  sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            font-kerning: auto;
-            letter-spacing: 10px;
-            line-height: 1.2;
-            position: absolute;
-            bottom: 20%;
-            display: flex;
-            text-align: center;
-            animation: neonblue 2s ease-in-out infinite alternate;
-        }
-         @keyframes neonblue {
-            from {
-                text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
-                0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
-            }
-            to {
-                text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
-                0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
-            }
-         } 
 
 .porfolio-container {
     background-color: rgba(16,28,25,100); 
@@ -254,6 +230,32 @@ body {
     z-index: 1;
 }
 
+
+.porfolio-heading-lets-explore {
+    display: block;
+    margin-bottom: 60%;
+    background-color: rgba(16,28,25,100);
+    color: white;
+    font-family: 'Red Hat Display',  sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-kerning: auto;
+    letter-spacing: 10px;
+    line-height: 1.2;
+    text-align: center;
+    animation: neonblue 2s ease-in-out infinite alternate;
+}
+ @keyframes neonblue {
+    from {
+        text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
+        0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
+    }
+    to {
+        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
+        0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+    }
+ } 
+
 .portfolio-heading-text {
     display: block;
     background-color: rgba(16,28,25,100);
@@ -267,6 +269,32 @@ body {
     color: white;
     text-shadow: 1px 1px 2px #fff, 0 0 1em #228dff, 0 0 0.2em #228dff; 
 }
+
+
+        #heading-lets-explore {
+            color: white;
+            font-family: 'Red Hat Display',  sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-kerning: auto;
+            letter-spacing: 10px;
+            line-height: 1.2;
+            position: absolute;
+            bottom: 20%;
+            display: flex;
+            text-align: center;
+            animation: neonblue 2s ease-in-out infinite alternate;
+        }
+         @keyframes neonblue {
+            from {
+                text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #228dff,
+                0 0 10px #228dff, 0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff;
+            }
+            to {
+                text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228dff,
+                0 0 17.5px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 37.5px #228dff;
+            }
+         } 
 
 #mad-max-mobile {
     object-fit: cover;
@@ -290,12 +318,11 @@ body {
         top: 4%;
         font-size: 70px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 70px;
-        margin-top: 130%;
     }
     .wave-container {
-        height: 1300px;
+        height: 800px;
     }
     .portfolio-section-container { 
         height: 350px;
@@ -381,13 +408,12 @@ body {
         top: 10%;
         font-size: 150px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 110px;
-        margin-top: 130%;
     }
     .wave-container {
         /* background-color: blue; */
-        height: 1700px;
+        height: 1100px;
     }
     .portfolio-section-container { 
         height: 450px;
@@ -475,13 +501,12 @@ body {
         top: 30%;
         font-size: 200px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 125px;
-        margin-top: 120%;
     }
     .wave-container {
         /* background-color: red; */
-        height: 2000px;
+        height: 1500px;
     }
     .portfolio-section-container { 
         height: 590px;
@@ -564,13 +589,12 @@ body {
     #main-top-heading {
         font-size: 150px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 140px;
-        margin-top: 125%;
     }
     .wave-container {
         /* background-color: purple; */
-        height: 2500px;
+        height: 1800px;
     }
     .portfolio-section-container { 
         height: 800px;
@@ -654,13 +678,12 @@ body {
     #main-top-heading {
         font-size: 180px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 180px;
-        margin-top: 125%;
     }
     .wave-container {
         /* background-color: orange; */
-        height: 3000px;
+        height: 2000px;
     }
     .portfolio-section-container { 
         height: 1000px;
@@ -743,13 +766,12 @@ body {
     #main-top-heading {
         font-size: 240px;
     }
-    #heading-lets-explore {
+    .porfolio-heading-lets-explore {
         font-size: 230px;
-        margin-top: 130%;
     }
     .wave-container {
         /* background-color: yellow; */
-        height: 4000px;
+        height: 3000px;
     }
     .portfolio-section-container { 
         height: 1000px;
