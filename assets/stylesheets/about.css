@@ -3,9 +3,7 @@
 body {
     font-family: 'Red Hat Display',  sans-serif;
 }
-.about-container {
-    margin: 1% 20%;
-}
+
 .about-paragraph-container {
     padding: 20px 0;
 }
@@ -48,4 +46,15 @@ img {
     object-fit: cover; 
     object-position: 0 100%; 
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        margin: 1% 15%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .about-container {
+        margin: 1% 25%;
+    }
 }
